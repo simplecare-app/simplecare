@@ -1,0 +1,18 @@
+body{
+    background-color:grey;
+}
+
+nav{
+    display:flex;
+    background-color: red;
+    justify-content: space-evenly;
+}
+
+li{
+    list-style-type: none;
+}
+
+.createButton{
+    display: flex;
+    justify-content: space-evenly;
+}
