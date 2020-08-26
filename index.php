@@ -30,9 +30,12 @@
                 echo "<p>Fehler beim Speichervorgang.</p>";
             }
         }
+    
+        if(!is_file('annonce.txt')){
+            file_put_contents('annonces.txt','');
+        }
 
-
-        $annonces=file_get_contents (  'annonces.txt');
+        $annonces=file_get_contents ('annonces.txt');
         $now = time();
         foreach(preg_split("/((\r?\n)|(\r\n?))/", $annonces) as $line){
             $annonce = preg_split("/\^/", $line);
