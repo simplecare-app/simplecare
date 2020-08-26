@@ -1,0 +1,90 @@
+html{
+    background-color: whitesmoke;
+}
+body {
+    font-family:'Roboto';
+}
+header {
+    border-radius: 20px;
+    color: white;
+    background-color: rgb(190, 205, 250);
+    padding: 10px;
+    border: blue;
+    border-radius: 0%;
+    font-family:'Roboto';
+}
+
+h1 {
+    font-size: 25px;
+    padding: blue;
+}
+
+.a{
+    display:flex;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.navbar{
+    margin-left: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav a{
+    padding: 20px;
+    border-radius: 15px;
+    text-decoration: none;
+    color: white;
+}
+
+nav a:hover{
+    transition:  1s;
+    background-color: rgb(112, 144, 243);
+    color: white;
+}
+
+.annonce {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgb(190, 205, 250);
+    border-radius: 20px;
+    padding: 10px;
+    margin: 10px 0;
+    position: relative;
+}
+
+.name{
+    font-weight: bold;
+}
+
+.address{
+    font-style: italic;
+}
+
+.auftrag{
+    padding-top: 10px;
+}
+
+span.dauer {
+    position: absolute;
+    right: 10px;
+    top: 5px;
+}
+
+.pic_logo{
+    height: 100%;
+    left:20px;
+    top:35px;
+    max-height: 5em;
+    margin-right: 10px;
+}
+
+@media only screen and (max-width: 680px) {
+    .navbar {
+        flex-direction: column;
+    }
+    nav a{
+        padding: 10px 20px;
+    }
+}
