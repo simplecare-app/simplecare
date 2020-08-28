@@ -77,7 +77,7 @@
             $endzeit = time() +($dauer*60*60);
             $rand = rand(1000, 9999);
             $annonce = "\nANNONCE^".$name.'^'.$address.'^'.$auftrag.'^'.$endzeit.'^'.$rand.'^';
-                echo '<span id="code">Noch vor Ablauf der Gültgkeit ihres Auftrags, können Sie mit diesem Code ihren Auftrag löschen : '.$rand.'</span>';
+               // echo '<span id="code">Noch vor Ablauf der Gültgkeit ihres Auftrags, können Sie mit diesem Code ihren Auftrag löschen : '.$rand.'</span>';
             return file_put_contents('annonces.txt',$annonce,FILE_APPEND);
         }
           
