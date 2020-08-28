@@ -16,7 +16,7 @@ header {
 
 h1 {
     font-size: 25px;
-    padding: blue;
+    text-align: center;
 }
 
 .a{
@@ -79,6 +79,50 @@ span.dauer {
     max-height: 5em;
     margin-right: 10px;
 }
+
+form {
+
+    padding: 0px 10px 30px;
+    box-sizing: border-box;
+    width: 300px;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  
+  }
+  
+  form > label {
+    flex-basis: 33%;
+  }
+  
+  form > input[type="text"] {
+    flex-basis: 60%;
+  }
+  
+  form > button {
+    flex-basis: 100%;
+  }
+
+  .gesamtbox {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  
+  }
+  .eingabebox {
+      flex-basis: 300px;
+  }
+  .annonces {
+    flex-grow: 1;
+    min-width: 300px;
+  }
+
+  span#code {
+      color: red;
+      font-weight: bold;
+  }
 
 @media only screen and (max-width: 680px) {
     .navbar {
