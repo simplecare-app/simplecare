@@ -31,7 +31,7 @@
             }
         }
     
-        if(!is_file('annonce.txt')){
+        if(!is_file('annonces.txt')){
             file_put_contents('annonces.txt','');
         }
 
